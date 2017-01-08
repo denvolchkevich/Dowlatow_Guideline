@@ -1,0 +1,10 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic');
+
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+
+.fontFamily-RobotoSlab {
+  font-family: $roboto-slab;
+}

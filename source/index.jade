@@ -1,0 +1,45 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible' content='ie=edge')
+        title Styleguide - Dowlatow
+        meta(name='description' content='Централизованное место хранения UI компонентов, руководящих принципов бренда, руководств дизайна и кода')
+        meta(name='author' content='Denis Volchkevich')
+        link( type='text/plain' rel='author' href='http://style.volchkevich.pro/humans.txt')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+
+        link(rel='stylesheet' href='style/main.css')
+
+        link(rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png")
+        link(rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32")
+        link(rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16")
+        link(rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5")
+        meta(name="theme-color" content="#ffffff")
+
+        script(src='https://use.fontawesome.com/aec116ab0c.js')
+
+    body
+        <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        // Content here
+        aside.sidebar
+            include includes/_sidebar
+
+        section.main
+            div.main-container.pageWrap
+                include includes/_introduction
+
+
+        // jQuery
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+
+        script(src='js/collapse-min.js')
+
+        // Google analytics
+        script.
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        // script(src='https://www.google-analytics.com/analytics.js' async defer)

@@ -1,0 +1,90 @@
+// Button
+
+.button {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  border-width: 0;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  apperance: none;
+  cursor: pointer;
+  outline-style: none;
+  transition-property: all;
+  transition-duration: 80ms;
+  transition-timing-function: linear;
+  user-select: none;
+  white-space: nowrap;
+
+  &:active {
+    transition-property: none;
+  }
+}
+
+// Button sizes
+
+.button--xl {
+  @extend .borderRadius-m;
+  @extend .fontSize-l;
+  height: 60px;
+  line-height: 60px;
+  min-width: 60px;
+  padding: 0 30px;
+}
+
+.button--l {
+  @extend .borderRadius-m;
+  @extend .fontSize-m;
+  height: 50px;
+  line-height: 50px;
+  min-width: 50px;
+  padding: 0 25px;
+}
+
+.button--m {
+  @extend .borderRadius-m;
+  @extend .fontSize-m;
+  height: 40px;
+  line-height: 40px;
+  min-width: 40px;
+  padding: 0 20px;
+}
+
+.button--s {
+  @extend .borderRadius-s;
+  @extend .fontSize-s;
+  height: 30px;
+  line-height: 30px;
+  min-width: 30px;
+  padding: 0 15px;
+}
+
+.button--flat {
+  color: $white;
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 rgba(31, 45, 61, .15)
+  }
+
+  &:active {
+    box-shadow: inset 0 2px 0 rgba(31,45,61,.15);
+  }
+}
+
+.button--ghost {
+  box-shadow: inset 0 0 0 1px #e0e6ed;
+  color: $steel;
+  background-color: transparent;
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 rgba(31,45,61,.15);
+    color: $white;
+  }
+
+  &:active {
+    box-shadow: inset 0 2px 0 rgba(31,45,61,.15);
+    color: $white;
+  }
+}

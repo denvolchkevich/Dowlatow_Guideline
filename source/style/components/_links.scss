@@ -1,0 +1,106 @@
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  outline: none;
+}
+
+.link, .link:link {
+  transition: all .15s linear;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+// Blue link
+// This is the default, most common link style.
+
+.link--blue {
+  color: $dowlatow;
+}
+
+.link--blue:hover {
+  color: $dark_dowlatow;
+}
+
+
+// Dark link
+// For links that have to match the main body text. To be used on light backgrounds.
+
+.link--dark {
+  color: $slate;
+}
+
+.link--dark:hover {
+  color: $black;
+}
+
+
+// Light link
+// For subtle or infrequently used links. To be used on light backgrounds.
+
+.link--light {
+  color: $silver;
+}
+
+.link--light:hover {
+  color: $black;
+}
+
+// Light link (Reversed)
+// For subtle or infrequently used links. To be used on dark backgrounds.
+
+.link--lightReversed {
+  color: $silver;
+}
+
+.link--lightReversed:hover {
+  color: $white;
+}
+
+// Negative link
+// Some links need a visual warning to prevent harmful, unintentional actions.
+
+.link--negative {
+  color: $silver;
+}
+
+.link--negative:hover {
+  color: $negative;
+}
+
+
+// Underlined link
+// For links that have to match the main body text. Needs to be combined with one of the other link styles .link--light, .link--dark or .link--lightReversed.
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .link--underline {
+    background-image: linear-gradient(180deg,transparent 75%,#c0ccda 0);
+  }
+}
+
+.link--underline {
+  background-image: linear-gradient(180deg,transparent 50%,#c0ccda 0);
+}
+
+
+// Snow background link
+// This link receives a light grey background on hover. This link style is commonly used in popovers, modals and navigation menus to provide a larger click area.
+
+.link--snowBg {
+  color: $slate;
+}
+
+.link--snowBg:hover {
+  background-color: $snow;
+
+}
+
+.is-active {
+  color: $dowlatow;
+}
+
+.is-active:hover {
+  color: $dark_dowlatow;
+}

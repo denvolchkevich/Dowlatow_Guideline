@@ -1,0 +1,118 @@
+// Club colors
+
+$club_yellow: #FFB300;
+$light_club_yellow: lighten($club_yellow, 10%);
+$dark_club_yellow: darken($club_yellow, 3%);
+
+$club_green: #34a952;
+$light_club_green: lighten($club_green, 10%);
+$dark_club_green: darken($club_green, 3%);
+
+$club_blue: #2B344B;
+$light_club_blue: lighten($club_blue, 10%);
+$dark_club_blue: darken($club_blue, 3%);
+
+$club_black: #1F2D3D;
+$club_gray: #273444;
+$club_light-grey: #3C4858;
+$club_extra-light-grey: #8492A6;
+$club_snow: #F9FAFC;
+$club_dark-snow: #EFF2F7;
+
+// Logo colors
+$club-logo-yellow: #FFA000;
+$light-club-logo-yellow: #FFB300;
+$dark-club-logo-yellow: #FF8F00;
+$club-logo-black: #000000;
+
+// UI colors
+
+$club_positive: $club_green;
+$club_negative: #FF4949;
+$club_warning: $club_yellow;
+
+// Background colors
+
+.bg__club {
+  &_yellow{
+    background-color: $club_yellow;
+
+    &_l {
+      background-color: $light_club_yellow;
+    }
+
+    &_d {
+      background-color: $dark_club_yellow;
+    }
+  }
+}
+
+.bg__club {
+  &_green{
+    background-color: $club_green;
+
+    &_l {
+      background-color: $light_club_green;
+    }
+
+    &_d {
+      background-color: $dark_club_green;
+    }
+  }
+}
+
+.bg__club {
+  &_blue{
+    background-color: $club_blue;
+
+    &_l {
+      background-color: $light_club_blue;
+    }
+
+    &_d {
+      background-color: $dark_club_blue;
+    }
+  }
+}
+
+.bg__club {
+  &_black {
+    background-color: $club_black;
+  }
+  &_grey{
+    background-color: $club_gray;
+  }
+  &_light-grey{
+    background-color: $club_light-grey;
+  }
+  &_extra-light-grey{
+    background-color: $club_extra-light-grey;
+  }
+  &_snow{
+    background-color: $club_snow;
+  }
+  &_dark-snow{
+    background-color: $club_dark_snow;
+  }
+  &_positive{
+    background-color: $club_positive;
+  }
+  &_negative{
+    background-color: $club_negative;
+  }
+  &_warning{
+    background-color: $club_warning;
+  }
+  &_logo_yellow{
+    background-color: $club_logo-yellow;
+  }
+  &_logo_yellow_l{
+    background-color: $light-club-logo-yellow;
+  }
+  &_logo_yellow_d{
+    background-color: $dark-club-logo-yellow;
+  }
+  &_logo_black{
+    background-color: $club-logo-black;
+  }
+}

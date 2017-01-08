@@ -1,0 +1,650 @@
+html{
+  line-height: 1;
+  font-family: $roboto;
+  color: $slate;
+  font-size: 16px;
+}
+
+::selection {
+  background: $warning;
+  color: $white;
+}
+
+.display-none {
+  display: none;
+}
+
+// Width
+
+.width-100 {
+  width: 100%;
+}
+
+
+.boxSizing-borderBox,
+.form-control-indicator,
+a,
+a:after,
+a:before,
+article,
+article:after,
+article:before,
+aside,
+aside:after,
+aside:before,
+button,
+button:after,
+button:before,
+code,
+code:after,
+code:before,
+details,
+details:after,
+details:before,
+div,
+div:after,
+div:before,
+fieldset,
+fieldset:after,
+fieldset:before,
+footer,
+footer:after,
+footer:before,
+form,
+form:after,
+form:before,
+header,
+header:after,
+header:before,
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=submit],
+input[type=tel],
+input[type=text],
+input[type=url],
+main,
+main:after,
+main:before,
+nav,
+nav:after,
+nav:before,
+pre,
+pre:after,
+pre:before,
+section,
+section:after,
+section:before,
+select,
+summary,
+summary:after,
+summary:before,
+textarea,
+textarea:after,
+textarea:before {
+  box-sizing: border-box
+}
+
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+}
+
+// Uniform spacing
+// Spacing can be applied using either margin or padding. Both margin and padding share the same predefined scale.
+
+// Margin classes
+
+.margin-xl {
+  margin: 80px;
+}
+
+.margin-l {
+  margin: 40px;
+}
+
+.margin-m {
+  margin: 20px;
+}
+
+.margin-s {
+  margin: 15px;
+}
+
+.margin-xs {
+  margin: 10px;
+}
+
+.margin-xxs {
+  margin: 5px;
+}
+
+// Padding classes
+
+.padding-xl {
+  padding: 80px;
+}
+
+.padding-l {
+  padding: 40px;
+}
+
+.padding-m {
+  padding: 20px;
+}
+
+.padding-s {
+  padding: 15px;
+}
+
+.padding-xs {
+  padding: 10px;
+}
+
+.padding-xxs {
+  padding: 5px;
+}
+
+// Individual spacing
+// Individual spacing can be applied to a single side of an element using either margin or padding. Again, both margin and padding share the same predefined scale. The same 6 sizes are available.
+
+// Margin classes
+
+.marginTop-xl {
+  margin-top: 80px;
+}
+
+.marginRight-xl {
+  margin-right: 80px;
+}
+
+.marginBottom-xl {
+  margin-bottom: 80px;
+}
+
+.marginLeft-xl {
+  margin-left: 80px;
+}
+
+.marginTop-l {
+  margin-top: 40px;
+}
+
+.marginRight-l {
+  margin-right: 40px;
+}
+
+.marginBottom-l {
+  margin-bottom: 40px;
+}
+
+.marginLeft-l {
+  margin-left: 40px;
+}
+
+.marginTop-m {
+  margin-top: 20px;
+}
+
+.marginRight-m {
+  margin-right: 20px;
+}
+
+.marginBottom-m {
+  margin-bottom: 20px;
+}
+
+.marginLeft-m {
+  margin-left: 20px;
+}
+
+.marginTop-s {
+  margin-top: 15px;
+}
+
+.marginRight-s {
+  margin-right: 15px;
+}
+
+.marginBottom-s {
+  margin-bottom: 15px;
+}
+
+.marginLeft-s {
+  margin-left: 15px;
+}
+
+.marginTop-xs {
+  margin-top: 10px;
+}
+
+.marginRight-xs {
+  margin-right: 10px;
+}
+
+.marginBottom-xs {
+  margin-bottom: 10px;
+}
+
+.marginLeft-xs {
+  margin-left: 10px;
+}
+
+.marginTop-xxs {
+  margin-top: 5px;
+}
+
+.marginRight-xxs {
+  margin-right: 5px;
+}
+
+.marginBottom-xxs {
+  margin-bottom: 5px;
+}
+
+.marginLeft-xxs {
+  margin-left: 5px;
+}
+
+// Padding classes
+
+.paddingTop-xl {
+  padding-top: 80px;
+}
+
+.paddingRight-xl {
+  padding-right: 80px;
+}
+
+.paddingBottom-xl {
+  padding-bottom: 80px;
+}
+
+.paddingLeft-xl {
+  padding-left: 80px;
+}
+
+.paddingTopBottom-xl {
+  padding-top: 80px;
+  padding-bottom: 80px
+}
+
+.paddingLeftRight-xl {
+  padding-left: 80px;
+  padding-right: 80px
+}
+
+.paddingTop-l {
+  padding-top: 40px;
+}
+
+.paddingRight-l {
+  padding-right: 40px;
+}
+
+.paddingBottom-l {
+  padding-bottom: 40px;
+}
+
+.paddingLeft-l{
+  padding-left: 40px;
+}
+
+.paddingTopBottom-l {
+  padding-top: 40px;
+  padding-bottom: 40px
+}
+
+.paddingLeftRight-l {
+  padding-left: 40px;
+  padding-right: 40px
+}
+
+.paddingTop-m {
+  padding-top: 20px;
+}
+
+.paddingRight-m {
+  padding-right: 20px;
+}
+
+.paddingBottom-m {
+  padding-bottom: 20px;
+}
+
+.paddingLeft-m {
+  padding-left: 20px;
+}
+
+.paddingTopBottom-m {
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+
+.paddingLeftRight-m {
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+.paddingTop-s {
+  padding-top: 15px;
+}
+
+.paddingRight-s {
+  padding-right: 15px;
+}
+
+.paddingBottom-s {
+  padding-bottom: 15px;
+}
+
+.paddingLeft-s {
+  padding-left: 15px;
+}
+
+.paddingTopBottom-s {
+  padding-top: 15px;
+  padding-bottom: 15px
+}
+
+.paddingLeftRight-s {
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.paddingTop-xs {
+  padding-top: 10px;
+}
+
+.paddingRight-xs {
+  padding-right: 10px;
+}
+
+.paddingBottom-xs {
+  padding-bottom: 10px;
+}
+
+.paddingLeft-xs {
+  padding-left: 10px;
+}
+
+.paddingTopBottom-xs {
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
+.paddingLeftRight-xs {
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.paddingTop-xxs {
+  padding-top: 5px;
+}
+
+.paddingRight-xxs {
+  padding-right: 5px;
+}
+
+.paddingBottom-xxs {
+  padding-bottom: 5px;
+}
+
+.paddingLeft-xxs {
+  padding-left: 5px;
+}
+
+.paddingTopBottom-xxs {
+  padding-top: 5px;
+  padding-bottom: 5px
+}
+
+.paddingLeftRight-xxs {
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.padding-0 {
+  padding: 0
+}
+
+.paddingTop-0 {
+  padding-top: 0
+}
+
+.paddingRight-0 {
+  padding-right: 0
+}
+
+.paddingBottom-0 {
+  padding-bottom: 0
+}
+
+.paddingLeft-0 {
+  padding-left: 0
+}
+
+.paddingTopBottom-0 {
+  padding-top: 0;
+  padding-bottom: 0
+}
+
+.paddingLeftRight-0 {
+  padding-left: 0;
+  padding-right: 0
+}
+
+
+
+// Border radius
+.borderRadius-l {
+  border-radius: 10px
+}
+
+.borderRadius-m {
+  border-radius: 4px
+}
+
+.borderRadius-s {
+  border-radius: 3px
+}
+
+.borderRadius-0 {
+  border-radius: 0
+}
+
+.borderRadius-circle {
+  border-radius: 50%
+}
+
+.borderRadiusTop-l {
+  border-radius: 10px 10px 0 0
+}
+
+.borderRadiusTop-m {
+  border-radius: 4px 4px 0 0
+}
+
+.borderRadiusTop-s {
+  border-radius: 3px 3px 0 0
+}
+
+.borderRadiusBottom-l {
+  border-radius: 0 0 10px 10px
+}
+
+.borderRadiusBottom-m {
+  border-radius: 0 0 4px 4px
+}
+
+.borderRadiusBottom-s {
+  border-radius: 0 0 3px 3px
+}
+
+.borderRadiusLeft-l {
+  border-radius: 10px 0 0 10px
+}
+
+.borderRadiusLeft-m {
+  border-radius: 4px 0 0 4px
+}
+
+.borderRadiusLeft-s {
+  border-radius: 3px 0 0 3px
+}
+
+.borderRadiusRight-l {
+  border-radius: 0 10px 10px 0
+}
+
+.borderRadiusRight-m {
+  border-radius: 0 4px 4px 0
+}
+
+.borderRadiusRight-s {
+  border-radius: 0 3px 3px 0
+}
+
+.borderRadiusBottomLeft-l {
+  border-radius: 0 0 0 10px
+}
+
+.borderRadiusBottomLeft-m {
+  border-radius: 0 0 0 4px
+}
+
+.borderRadiusBottomLeft-s {
+  border-radius: 0 0 0 3px
+}
+
+.borderRadiusBottomRight-l {
+  border-radius: 0 0 10px 0
+}
+
+.borderRadiusBottomRight-m {
+  border-radius: 0 0 4px 0
+}
+
+.borderRadiusBottomRight-s {
+  border-radius: 0 0 3px 0
+}
+
+.borderRadiusTopLeft-l {
+  border-radius: 10px 0 0 0
+}
+
+.borderRadiusTopLeft-m {
+  border-radius: 4px 0 0 0
+}
+
+.borderRadiusTopLeft-s {
+  border-radius: 3px 0 0 0
+}
+
+.borderRadiusTopRight-l {
+  border-radius: 0 10px 0 0
+}
+
+.borderRadiusTopRight-m {
+  border-radius: 0 4px 0 0
+}
+
+.borderRadiusTopRight-s {
+  border-radius: 0 3px 0 0
+}
+
+
+// Vertical align
+
+.verticalAlign-top {
+  vertical-align: top
+}
+
+.verticalAlign-textTop {
+  vertical-align: text-top
+}
+
+.verticalAlign-middle {
+  vertical-align: middle
+}
+
+.verticalAlign-bottom {
+  vertical-align: bottom
+}
+
+.verticalAlign-textBottom {
+  vertical-align: text-bottom
+}
+
+
+// Box
+.box {
+  width: 100%;
+  &-border {
+    border: 1px solid $smoke;
+  }
+  &-color {
+    min-height: 80px;
+  }
+}
+
+
+
+.inline>div {
+  display: inline-block;
+}
+
+.whiteSpace-nowrap {
+  white-space: nowrap;
+}
+
+.overflowX-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+// Logo spec image
+.img-container {
+  img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+  }
+}
+
+.x-value-container {
+  .x-value {
+    img {
+      height: 35px;
+      width: auto;
+      display: block;
+      user-select: none;
+    }
+  }
+}
+
+.email-mockup-container {
+  .email-mockup {
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+  }
+}
+
+.display-inlineBlock {
+  display: inline-block !important;
+}
+
+.coming-soon {
+  margin-left: -10px;
+  font-size: 8px;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,145 @@
+// Sidebar
+
+.sidebar {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  background-color: $white;
+  border-right: 1px solid $smoke;
+  -webkit-overflow-scrolling: touch;
+  z-index: 400;
+  transform: translateX(-100%);
+}
+
+
+@media screen and (min-width:480px) {
+
+}
+
+@media screen and (min-width:768px) {
+  .sidebar {
+    width: 30%;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width:1180px) {
+  .sidebar {
+    width: 20%;
+  }
+}
+
+.sidebar-container {
+  overflow: auto;
+  height: 100%;
+}
+
+.sidebar-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $smoke;
+  text-align: center;
+}
+
+.sidebar-header__brand {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .sidebar-header__title {
+    letter-spacing: 3px;
+    font-size: 10px;
+    color: $silver;
+  }
+}
+
+.sidebar-header__brand-img {
+  margin-bottom: 15px;
+  a {
+    cursor: pointer;
+    img {
+      width: 80px;
+      height: auto;
+    }
+  }
+}
+
+.sidebar-footer {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $white;
+
+  .sidebar-footer__copyright {
+    font-size: 10px;
+    padding: 5px;
+    line-height: 1;
+    color: $silver;
+  }
+}
+
+.sidebar-nav {
+  position: relative;
+  background-color: $white;
+  box-sizing: border-box;
+  margin-bottom: 56px;
+}
+
+.sidebar-nav__item-container {
+  border-bottom: 1px solid $smoke;
+  cursor: pointer;
+
+  &.open {
+    i.fa-caret-down {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.sidebar-nav__item {
+  position: relative;
+
+  span {
+    display: block;
+    user-select: none;
+  }
+
+  .sidebar-nav__icon-container {
+    position: absolute;
+    padding-right: 15px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    pointer-events: none;
+
+    .sidebar-nav__icon {
+      display: table;
+      height: 100%;
+      color: $dark_smoke;
+
+      i {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.sidebar-nav__item-secondary-container {
+  border-top: 1px solid $smoke;
+  background-color: $snow;
+  display: none;
+
+  .sidebar-nav__item-secondary {
+
+    a {
+      display: block;
+      user-select: none;
+    }
+  }
+}

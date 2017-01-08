@@ -1,0 +1,202 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small,
+strong {
+  font-size: 100%;
+  margin: 0;
+  font-weight: 400
+}
+
+ul, li {
+  margin-left: 40px;
+}
+
+// Font sizes
+// The font scale consists of 9 different font sizes. The default size applied to the body is Medium.
+
+.fontSize-xxxxl {
+  font-size: 46px;
+  margin-left: -4px;
+}
+
+.fontSize-xxxl {
+  font-size: 38px;
+  margin-left: -2px;
+}
+
+.fontSize-xxl {
+  font-size: 26px;
+  margin-left: -2px;
+}
+
+.fontSize-xl {
+  font-size: 20px;
+}
+
+.fontSize-l {
+  font-size: 18px;
+}
+
+.fontSize-m {
+  font-size: 16px;
+}
+
+.fontSize-s {
+  font-size: 14px;
+}
+
+.fontSize-xs {
+  font-size: 12px;
+}
+
+.fontSize-xxs {
+  font-size: 10px;
+}
+
+
+// Font weight
+// There are three font weights available to use — Blond, Regular and Medium. These can be applied with .fontWeight-3, .fontWeight-4 and .fontWeight-5 respectively.
+
+.fontWeight-3 {
+  font-weight: 300;
+}
+
+.fontWeight-4 {
+  font-weight: 400;
+}
+
+.fontWeight-5 {
+  font-weight: 500;
+}
+
+
+// Alignment classes
+// Left, right or center align text with text alignment classes.
+
+.textAlign-left {
+  text-align: left;
+}
+
+.textAlign-center {
+  text-align: center;
+}
+
+.textAlign-right {
+  text-align: right;
+}
+
+
+// Transformation classes
+// Transform text with text transformation classes.
+
+.textTransform-lowercase {
+  text-transform: lowercase;
+}
+
+.textTransform-uppercase {
+  text-transform: uppercase;
+}
+
+.textTransform-capitalize {
+  text-transform: capitalize;
+}
+
+
+// Line-height
+
+.lineHeight-xxxxl {
+  line-height: 58px
+}
+
+.lineHeight-xxxl {
+  line-height: 46px
+}
+
+.lineHeight-xxl {
+  line-height: 38px
+}
+
+.lineHeight-xl {
+  line-height: 34px
+}
+
+.lineHeight-l,
+.textarea--xl {
+  line-height: 28px
+}
+
+.lineHeight-m,
+.textarea--growing,
+.textarea--l,
+.textarea--m {
+  line-height: 24px
+}
+
+.lineHeight-s,
+.popover-select-subtitle,
+.popover-select-title,
+.textarea--s {
+  line-height: 22px
+}
+
+.lineHeight-xs,
+.textarea--xs {
+  line-height: 18px
+}
+
+.lineHeight-xxs {
+  line-height: 14px
+}
+
+.lineHeight-1 {
+  line-height: 1
+}
+
+
+
+.whiteSpace-nowrap {
+  white-space: nowrap;
+}
+
+
+// Icons size
+
+.iconSize-xxxxl {
+  font-size: 46px!important;
+}
+
+.iconSize-xxxl {
+  font-size: 38px!important;
+}
+
+.iconSize-xxl {
+  font-size: 26px!important;
+}
+
+.iconSize-xl {
+  font-size: 20px!important;
+}
+
+.iconSize-l {
+  font-size: 18px!important;
+}
+
+.iconSize-m {
+  font-size: 16px!important;
+}
+
+.iconSize-s {
+  font-size: 14px!important;
+}
+
+.iconSize-xs {
+  font-size: 12px!important;
+}
+
+.iconSize-xxs {
+  font-size: 10px!important;
+}

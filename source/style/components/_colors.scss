@@ -1,0 +1,72 @@
+// Colors
+
+// Styleguide colors
+// Grey colors
+
+$white: #ffffff;
+$black: #1F2D3D;
+$steel: #273444;
+$slate: #3C4858;
+$silver: #8492A6;
+
+$smoke: #E0E6ED;
+$dark_smoke: #D3DCE6;
+$extra_dark_smoke: #C0CCDA;
+
+$snow: #F9FAFC;
+$dark_snow: #EFF2F7;
+$extra_dark_snow: #E5E9F2;
+
+// UI colors
+
+$dowlatow: #135DB7;
+$light_dowlatow: #5599EC;
+$dark_dowlatow: #10509D;
+
+$positive: #13CE66;
+$negative: #FF4949;
+$warning: #FFC82C;
+
+
+.c-silver {
+  color: $silver;
+}
+
+.c-dowlatow {
+  color: $dowlatow;
+}
+
+.c-positive {
+  color: $positive;
+}
+
+.c-negative {
+  color: $negative;
+}
+
+.c-warning {
+  color: $warning;
+}
+
+.c-white {
+  color: $white;
+}
+
+// Background colors
+
+.bg {
+  &--dowlatow {
+    background-color: $dowlatow;
+    &-hover:hover {
+      background-color: $dowlatow;
+    }
+  }
+  &-snow--d {
+    background-color: $dark_snow;
+  }
+}
+
+
+
+// Projects colors
+@import 'projects/colors/club-colors';

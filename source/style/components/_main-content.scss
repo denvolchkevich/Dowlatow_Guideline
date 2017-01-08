@@ -1,0 +1,44 @@
+.main-container {
+  max-width: 960px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width:480px) {
+  .main-container {
+    padding: 40px;
+  }
+
+  .pageWrap {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .main {
+    padding-left: 30%;
+  }
+
+  .main-container {
+    padding: 60px;
+  }
+
+  .pageWrap {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width:1180px) {
+  .main {
+    padding-left: 20%;
+  }
+
+  .main-container {
+    padding: 80px;
+  }
+
+  .pageWrap {
+    max-width: 1320px;
+  }
+}
